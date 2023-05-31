@@ -23,8 +23,6 @@ const ImageUploader = () => {
     });
 
     try {
-      const response = await axios.post('https://react-assignment-server-side-krtu.vercel.app/upload', formData);
-      console.log('Images uploaded:', response.data);
       imagesArray.forEach((image) => {
       const reader = new FileReader();
       reader.onload = (e) => {
